@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <!-- viewport: essencial para o layout responsivo funcionar em smartphones -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Biblioteca Digital UniFECAF: livros, materiais acadêmicos e conteúdos de apoio à aprendizagem.">
+  <title>Biblioteca Digital UniFECAF</title>
+  <link rel="icon" type="image/png" href="assets/imagens/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="pular-conteudo" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- CABEÇALHO E MENU -->
+  <header class="topo">
+    <div class="container topo__barra">
+      <a class="marca" href="#biblioteca" aria-label="UniFECAF - Biblioteca Digital">
+        <span class="marca__logo"><img src="assets/imagens/logo-unifecaf.png" alt="UniFECAF" width="640" height="130"></span>
+        <span class="marca__texto">Biblioteca Digital</span>
+      </a>
+
+      <!-- Menu (checkbox e label) -->
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="menu-botao" aria-label="Abrir ou fechar o menu">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="menu" aria-label="Menu principal">
+        <ul>
+          <li><a href="#biblioteca" aria-current="page">Biblioteca</a></li>
+          <li><a href="#livros">Livros</a></li>
+          <li><a href="#unidades">Unidades</a></li>
+          <li><a href="#contatos">Contatos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <!-- Primeira imagem do protótipo -->
+    <section class="hero" id="biblioteca" aria-labelledby="titulo-hero">
+      <div class="container hero__texto">
+        <h1 id="titulo-hero">Todo o conhecimento da UniFECAF em um só lugar</h1>
+        <p>Livros, materiais acadêmicos e conteúdos de apoio para acompanhar você em cada etapa da graduação.</p>
+        <a class="botao botao--verde" href="#livros">Explorar livros</a>
+      </div>
+    </section>
+
+    <!-- SOBRE A NOSSA BIBLIOTECA -->
+    <section class="sobre" aria-labelledby="titulo-sobre">
+      <div class="container">
+        <h2 id="titulo-sobre">Sobre a nossa biblioteca</h2>
+        <div class="sobre__grade">
+          <p>A Biblioteca Digital UniFECAF reúne obras de todas as áreas dos nossos cursos. Você acessa os títulos de qualquer lugar, a qualquer hora, pelo computador ou pelo celular.</p>
+          <img src="assets/imagens/sobre.svg" alt="Livro aberto com um marcador verde entre as páginas" width="600" height="400">
+          <p>Além dos livros, a plataforma oferece materiais de apoio, apostilas e indicações de leitura organizadas por categoria, para que você encontre rápido o que precisa estudar. O acervo reúne mais de 50 mil títulos entre exemplares físicos e digitais.</p>
+        </div>
+
+        <ul class="galeria">
+          <li><img src="assets/imagens/galeria-1.svg" alt="Notebook com tela azul sobre uma mesa" width="600" height="400"></li>
+          <li><img src="assets/imagens/galeria-2.svg" alt="Lupa representando a busca por títulos" width="600" height="400"></li>
+          <li><img src="assets/imagens/galeria-3.svg" alt="Três livros em pé, lado a lado" width="600" height="400"></li>
+          <li><img src="assets/imagens/galeria-4.svg" alt="Capelo de formatura" width="600" height="400"></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- BANNER -->
+    <figure class="banner">
+      <img src="assets/imagens/banner.svg" alt="Prateleira com livros nas cores azul e verde" width="1600" height="360">
+    </figure>
+
+    <!-- NOSSOS LIVROS -->
+    <section class="livros" id="livros" aria-labelledby="titulo-livros">
+      <div class="container">
+        <h2 id="titulo-livros">Nossos livros</h2>
+        <div class="livros__grade">
+          <article class="card">
+            <h3>Web Design Responsivo</h3>
+            <img src="assets/imagens/livro-1.png" alt="Capa do livro Web Design Responsivo, de Tárcio Zemel, com um monitor, um tablet e um celular" width="222" height="330">
+            <p class="card__autor">Tárcio Zemel</p>
+            <p>Páginas adaptáveis para todos os dispositivos: como fazer um site funcionar bem em computadores, tablets e celulares.</p>
+            <a class="botao" href="https://plataforma.bvirtual.com.br/Acervo/Publicacao/187453" target="_blank" rel="noopener noreferrer">Saiba mais<span class="sr-only"> sobre Web Design Responsivo (abre em nova aba)</span></a>
+          </article>
+          <article class="card">
+            <h3>Web Design</h3>
+            <img src="assets/imagens/livro-2.png" alt="Capa do livro Web Design, de Mônica Paz, em preto e verde" width="222" height="330">
+            <p class="card__autor">Mônica Paz</p>
+            <p>Conceitos e práticas para planejar e construir páginas e sites com atenção ao design.</p>
+            <a class="botao" href="https://plataforma.bvirtual.com.br/Acervo/Publicacao/212820" target="_blank" rel="noopener noreferrer">Saiba mais<span class="sr-only"> sobre Web Design (abre em nova aba)</span></a>
+          </article>
+          <article class="card">
+            <h3>Lógica de Programação e Algoritmos</h3>
+            <img src="assets/imagens/livro-3.png" alt="Capa do livro Lógica de Programação e Algoritmos, de Sandro de Araujo, com trechos de código na tela" width="222" height="330">
+            <p class="card__autor">Sandro de Araujo</p>
+            <p>Fundamentos de lógica e algoritmos para quem está começando a programar.</p>
+            <a class="botao" href="https://plataforma.bvirtual.com.br/Acervo/Publicacao/187737" target="_blank" rel="noopener noreferrer">Saiba mais<span class="sr-only"> sobre Lógica de Programação e Algoritmos (abre em nova aba)</span></a>
+          </article>
+          <article class="card">
+            <h3>Acessibilidade na Web</h3>
+            <img src="assets/imagens/livro-4.png" alt="Capa do livro Acessibilidade na Web, de Reinaldo Ferraz, com pessoas usando telas de vários tamanhos" width="222" height="330">
+            <p class="card__autor">Reinaldo Ferraz</p>
+            <p>Boas práticas para construir sites e aplicações acessíveis a todas as pessoas.</p>
+            <a class="botao" href="https://plataforma.bvirtual.com.br/Acervo/Publicacao/212774" target="_blank" rel="noopener noreferrer">Saiba mais<span class="sr-only"> sobre Acessibilidade na Web (abre em nova aba)</span></a>
+          </article>
+          <article class="card">
+            <h3>Redes de Computadores</h3>
+            <img src="assets/imagens/livro-5.png" alt="Capa do livro Redes de Computadores, 6ª edição, com uma cidade ilustrada" width="222" height="330">
+            <p class="card__autor">Tanenbaum, Feamster e Wetherall</p>
+            <p>Obra de referência sobre como os computadores se comunicam em rede (6ª edição).</p>
+            <a class="botao" href="https://plataforma.bvirtual.com.br/Acervo/Publicacao/206105" target="_blank" rel="noopener noreferrer">Saiba mais<span class="sr-only"> sobre Redes de Computadores (abre em nova aba)</span></a>
+          </article>
+          <article class="card">
+            <h3>Banco de Dados</h3>
+            <img src="assets/imagens/livro-6.png" alt="Capa do livro Banco de Dados, de Puga, França e Goya, em verde e azul" width="222" height="330">
+            <p class="card__autor">Puga, França e Goya</p>
+            <p>Implementação em SQL, PL/SQL e Oracle 11g.</p>
+            <a class="botao" href="https://plataforma.bvirtual.com.br/Acervo/Publicacao/3842" target="_blank" rel="noopener noreferrer">Saiba mais<span class="sr-only"> sobre Banco de Dados (abre em nova aba)</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- UNIDADES -->
+    <section class="unidades" id="unidades" aria-labelledby="titulo-unidades">
+      <div class="container">
+        <h2 id="titulo-unidades">As unidades</h2>
+
+        <article class="unidade">
+          <img src="assets/imagens/unidade-1.jpg" alt="Salão da biblioteca do Campus Sede, com estantes azuis cheias de livros e mezanino com mesas de estudo" width="1024" height="680">
+          <div>
+            <h3>Campus Sede (Taboão da Serra)</h3>
+            <p>Unidade com biblioteca física.<br>
+              Endereço: Av. Vida Nova, 166 - Jardim Maria Rosa, Taboão da Serra - SP, 06764-045.<br>
+              Atendimento presencial: segunda a sexta-feira, das 07h às 21h.<br>
+              Acervo: mais de 50 mil títulos, entre exemplares físicos e digitais.</p>
+          </div>
+        </article>
+        <article class="unidade">
+          <img src="assets/imagens/unidade-2.png" alt="Selo com o texto graduação EAD" width="477" height="272">
+          <div>
+            <h3>Acesso remoto (EAD e semipresencial)</h3>
+            <p>Alunos de outros polos ou do formato EAD e semipresencial acessam o acervo de forma remota pelo portal da <a href="https://www.unifecaf.com.br/biblioteca" target="_blank" rel="noopener noreferrer">Biblioteca UniFECAF<span class="sr-only"> (abre em nova aba)</span></a>.</p>
+          </div>
+        </article>
+        <article class="unidade">
+          <img src="assets/imagens/unidade-3.png" alt="Logotipo da Biblioteca Virtual" width="298" height="169">
+          <div>
+            <h3>Plataformas de Biblioteca Virtual</h3>
+            <ul class="plataformas">
+              <li>Plataforma One (login com CPF e senha)</li>
+              <li>Biblioteca Grupo A (requer cadastro prévio)</li>
+              <li>Pearson</li>
+              <li>Multiacervo</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTATOS -->
+    <section class="contatos" id="contatos" aria-labelledby="titulo-contatos">
+      <div class="container contatos__grade">
+        <div>
+          <h2 id="titulo-contatos">Contatos</h2>
+          <ul class="contatos__lista">
+            <li><a href="https://www.unifecaf.com.br/contato" target="_blank" rel="noopener noreferrer">Fale Conosco<span class="sr-only"> (abre em nova aba)</span></a></li>
+            <li><a href="https://www.unifecaf.com.br/ouvidoria" target="_blank" rel="noopener noreferrer">Ouvidoria<span class="sr-only"> (abre em nova aba)</span></a></li>
+            <li><a href="https://www.unifecaf.com.br/unifecaf-por-elas" target="_blank" rel="noopener noreferrer">UniFECAF por Elas<span class="sr-only"> (abre em nova aba)</span></a></li>
+            <li class="contatos__item">
+              <span class="icone"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg></span>
+              <a href="tel:+551142104950">(11) 4210-4950</a>
+            </li>
+            <li class="contatos__item">
+              <span class="icone"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg></span>
+              <a href="https://www.google.com/maps/search/?api=1&amp;query=Av.+Vida+Nova,+166,+Taboão+da+Serra,+SP" target="_blank" rel="noopener noreferrer">Av. Vida Nova, 166 - Jardim Maria Rosa, Taboão da Serra - SP, CEP 06764-045<span class="sr-only"> (abre o mapa em nova aba)</span></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="atendimento">
+          <h3>Atendimento UniFECAF</h3>
+          <p>Nosso atendimento é via WhatsApp para agilizar a sua vida universitária!</p>
+          <p>
+            <strong>On-line:</strong> seg. a sex., das 09h às 19h<br>
+            <strong>Presencial:</strong> seg. a sex., das 07h às 21h, na unidade sede em Taboão da Serra - SP
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <p> 2026 Biblioteca Digital UniFECAF. Projeto acadêmico - disciplina Design Web.</p>
+    </div>
+  </footer>
+</body>
+</html>
